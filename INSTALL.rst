@@ -18,7 +18,7 @@ Next, create the database, indexes, fixtures and an admin user:
 
 .. code-block:: console
 
-    $ docker-compose run --rm web bash /code/zenodo/scripts/init.sh
+    $ docker-compose run --rm -u 'root' web bash /code/zenodo/scripts/init.sh
     $ docker-compose run --rm statsd bash /init.sh
 
 Next, load demo records:
